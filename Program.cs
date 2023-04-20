@@ -15,6 +15,13 @@ while(seleccion!=5){
         BuscarCliente(id);
             break;
         case 4:
+        id = Funciones.IngresarInt("Ingresá el dni de la persona a la que le quieras cambiar la entrada");
+        int tipoCambiar = Funciones.IngresarInt("Ingresá el tipo de entrada por la que la quieras cambiar");
+        int abonoCambiar = SaberAbono(tipoCambiar);
+        if(Ticktera.CambiarEntrada(id, tipoCambiar, abonoCambiar)){
+            Ticktera.BuscarCliente(id).tipoEntrada = tipoCambiar;
+            Ticktera.BuscarCliente(id).totalAbonadoEntrada = abonoCambiar;
+        }
             break;
     }
     seleccion = Funciones.IngresarIntEntre("Ingresá la opción que quieras", 1, 5);
