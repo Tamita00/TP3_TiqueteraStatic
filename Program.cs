@@ -8,20 +8,27 @@ while(seleccion!=5){
             Console.WriteLine("Su numero de entrada es " + Ticktera.AgregarCliente(cliente));
             break;
         case 2:
-            ObtenerEstadistcasEvento();
+        if(Ticktera.ExistenClientes() == false) Console.WriteLine("Aún no se anotó nadie");
+        else ObtenerEstadistcasEvento();
             break;
         case 3:
-        id = Funciones.IngresarInt("Ingresá el dni de la persona que busques");
-        BuscarCliente(id);
+        id = Funciones.IngresarInt("Ingresá el ID de la persona que busques");
+        if(Ticktera.BuscarCliente(id) == null) Console.WriteLine("no existe dicho ID");
+        else BuscarCliente(id);
             break;
         case 4:
-        id = Funciones.IngresarInt("Ingresá el dni de la persona a la que le quieras cambiar la entrada");
-        int tipoCambiar = Funciones.IngresarInt("Ingresá el tipo de entrada por la que la quieras cambiar");
+        id = Funciones.IngresarInt("Ingresá el ID de la persona a la que le quieras cambiar la entrada");
+        if(Ticktera.BuscarCliente(id) == null) Console.WriteLine("no existe dicho ID");
+        else {
+            int tipoCambiar = Funciones.IngresarInt("Ingresá el tipo de entrada por la que la quieras cambiar");
         int abonoCambiar = SaberAbono(tipoCambiar);
         if(Ticktera.CambiarEntrada(id, tipoCambiar, abonoCambiar)){
             Ticktera.BuscarCliente(id).tipoEntrada = tipoCambiar;
             Ticktera.BuscarCliente(id).totalAbonadoEntrada = abonoCambiar;
+            Console.WriteLine("Cambio realizado con exito");
         }
+        else Console.WriteLine("No fue posible cambiar la entrada");
+        }        
             break;
     }
     seleccion = Funciones.IngresarIntEntre("Ingresá la opción que quieras", 1, 5);
@@ -47,7 +54,6 @@ Cliente NuevaInscripcion()
     
     return new Cliente(dni, apellido, nombre, fechaIncripcion, tipoEntrada, valorAbonado);
 }
-
 int SaberAbono(int tipoEntrada){
     int valorAbonado = 0;
 switch (tipoEntrada)
@@ -70,6 +76,6 @@ return valorAbonado;
 void ObtenerEstadistcasEvento(){  
     foreach(string texto in Ticktera.EstadisticasTicketera())
     {
-
+        Console.WriteLine(texto);
     }
 }

@@ -1,0 +1,15 @@
+Z:\PROG\2023\TP3_TiqueteraStatic\bin\Debug\net6.0\TP3_TiqueteraStatic.exe
+Z:\PROG\2023\TP3_TiqueteraStatic\bin\Debug\net6.0\TP3_TiqueteraStatic.deps.json
+Z:\PROG\2023\TP3_TiqueteraStatic\bin\Debug\net6.0\TP3_TiqueteraStatic.runtimeconfig.json
+Z:\PROG\2023\TP3_TiqueteraStatic\bin\Debug\net6.0\TP3_TiqueteraStatic.dll
+Z:\PROG\2023\TP3_TiqueteraStatic\bin\Debug\net6.0\TP3_TiqueteraStatic.pdb
+Z:\PROG\2023\TP3_TiqueteraStatic\obj\Debug\net6.0\TP3_TiqueteraStatic.csproj.AssemblyReference.cache
+Z:\PROG\2023\TP3_TiqueteraStatic\obj\Debug\net6.0\TP3_TiqueteraStatic.GeneratedMSBuildEditorConfig.editorconfig
+Z:\PROG\2023\TP3_TiqueteraStatic\obj\Debug\net6.0\TP3_TiqueteraStatic.AssemblyInfoInputs.cache
+Z:\PROG\2023\TP3_TiqueteraStatic\obj\Debug\net6.0\TP3_TiqueteraStatic.AssemblyInfo.cs
+Z:\PROG\2023\TP3_TiqueteraStatic\obj\Debug\net6.0\TP3_TiqueteraStatic.csproj.CoreCompileInputs.cache
+Z:\PROG\2023\TP3_TiqueteraStatic\obj\Debug\net6.0\TP3_TiqueteraStatic.dll
+Z:\PROG\2023\TP3_TiqueteraStatic\obj\Debug\net6.0\refint\TP3_TiqueteraStatic.dll
+Z:\PROG\2023\TP3_TiqueteraStatic\obj\Debug\net6.0\TP3_TiqueteraStatic.pdb
+Z:\PROG\2023\TP3_TiqueteraStatic\obj\Debug\net6.0\TP3_TiqueteraStatic.genruntimeconfig.cache
+Z:\PROG\2023\TP3_TiqueteraStatic\obj\Debug\net6.0\ref\TP3_TiqueteraStatic.dll
